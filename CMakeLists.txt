@@ -13,12 +13,14 @@ cmake_minimum_required (VERSION 3.31)  # 4.0 for best module support
 #
 #   cmake -S . -B build -DUSE_MODULES=ON ; cmake --build build
 #
+# In the above "build" is my standard output/build directory, s/build/out/ if you will.
+#
 # You *may* need to help CMake identify which compiler/toolchain to
 # use by selecting a Generator, see "CMake -G" for a list, if you're
 # on Windows it will be near the top corresponding to the version of
 # Visual Studio you have installed. Otherwise, I recommend Ninja.
 #
-#   cmake -G
+#   cmake -G "Visual Studio 17 2022" -S . -B build ; cmake --build build
 
 
 set (CMAKE_CXX_STANDARD 20)
