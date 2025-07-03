@@ -52,7 +52,7 @@ if (USE_MODULES)
 			FILE_SET	cxx_modules
 			TYPE 		CXX_MODULES
 			FILES
-				greet.ixx  # namespace: greets, module name: greetmod
+				greet.ixx  # namespace: greets, .ixx defines module name as: greeting
   )
 endif ()
 
