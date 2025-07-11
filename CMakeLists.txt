@@ -67,7 +67,7 @@ add_executable (
 )
 # We still need to advise CMake of the linkage relationship
 target_link_libraries (greeter PUBLIC greet)
-if (MY_USE_MODULES)
+if (USE_MODULES)
   # Tell CMake to scan this project for imports before building it
   set_target_properties (greeter PROPERTIES CMAKE_CXX_SCAN_FOR_MODULES ON)
   # Tell the code it can use the module path.
